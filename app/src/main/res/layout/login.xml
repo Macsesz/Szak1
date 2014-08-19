@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Felhasználónév:"
+        android:id="@+id/user_tv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:layout_below="@+id/user_tv"
+        android:layout_alignParentLeft="true"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jelszó:"
+        android:id="@+id/pass_tv"
+        android:layout_below="@+id/user"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:layout_below="@+id/pass_tv"
+        android:layout_alignParentStart="true"
+        android:ems="12"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ha még nem vagy rigisztrálva akkor az általad megadott adatokkal megteheted itt"
+        android:id="@+id/reg_tv"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/loginOk"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/tick"
+        android:scaleType="fitCenter"
+        android:padding="0dp"/>
+
+</RelativeLayout>

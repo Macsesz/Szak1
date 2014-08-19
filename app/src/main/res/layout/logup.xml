@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A film neve:"
+        android:id="@+id/title_tv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_below="@+id/title_tv"
+        android:layout_alignParentLeft="true"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rövid leírása:"
+        android:id="@+id/desc_tv"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:layout_below="@+id/desc_tv"
+        android:layout_alignParentStart="true"
+        android:ems="12"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/logupOk"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/tick"
+        android:scaleType="fitCenter"
+        android:padding="0dp"/>
+
+</RelativeLayout>
